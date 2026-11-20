@@ -19,7 +19,10 @@ export default function Homepage() {
 
   return (
     <div>
-      <header>Brigadoc</header>
+      <header><h1>Brigadoc</h1></header>
+      <nav>
+        <a href="/new">Create a new profile</a>
+      </nav>
       <sub>
         Welcome to Brigadoc! Ellora is honored to have you join us.
         For the survival of Ellora!
