@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react"
 import { supabase } from "../lib/supabase/supabase";
+import ProfileCard from "./ProfileCard";
 
 export default function Homepage() {
   const [brigaders, setBrigaders] = useState([]);
@@ -27,14 +28,7 @@ export default function Homepage() {
       <div>
         {brigaders.map((brigader) => (
           // pic URL not implemented yet. Let's do that in the card component instead!
-          <div>
-            <h3>{brigader.id} - {brigader.name}</h3>
-            <p>Squad: {brigader.squad} - Role: {brigader.role}</p>
-            <p>Appearance: {brigader.appearance}</p>
-            <p>Description: {brigader.description}</p>
-            <p>Bio: {brigader.bio}</p>
-            <p>Element: {brigader.element}</p>
-          </div>
+          <ProfileCard key={brigader.id} brigader={brigader} />
         ))}
       </div>
     </div>
