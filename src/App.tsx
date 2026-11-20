@@ -1,30 +1,12 @@
-import { useState, useEffect } from 'react'
-import { supabase } from './lib/supabase/supabase'
+import { Link, Route, Routes } from 'react-router'
 import Homepage from './components/Homepage'
 
 export default function App() {
-  // const [instruments, setInstruments] = useState([])
-
-  // useEffect(() => {
-  //   async function getInstruments() {
-  //     const { data: instruments } = await supabase.from('instruments').select()
-
-  //     if (instruments) {
-  //       setInstruments(instruments)
-  //     }
-  //   }
-
-  //   getInstruments()
-  // }, [])
-
-  // <ul>
-  //   {instruments.map((instrument) => (
-  //     <li key={instrument.id}>{instrument.name}</li>
-  //   ))}
-  // </ul>
   return (
     <div>
-      <Homepage />
+      <Routes>
+        <Route path="/" element={<Homepage />} />
+      </Routes>
     </div>
   )
 }
