@@ -163,7 +163,7 @@ This allows React Router routes such as `/new` and `/:id/edit` to work when acce
 
 ## Disclaimer
 
-Brigadoc is an unofficial fan-made project inspired by the *Avatar* franchise.
+Brigadoc is a project inspired by the *Avatar* franchise.
 
 *Avatar: The Last Airbender*, *The Legend of Korra*, *Avatar: Seven Havens*, and their associated characters and settings belong to their respective rights holders.
 
